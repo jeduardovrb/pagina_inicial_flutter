@@ -98,8 +98,8 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
 
-           // Text(
-           //   'Clique no botão:'),
+            
+            Text('Seja-Bem vindos(as) ao produtos Silver.'),
 
             FlatButton(
               child: Text(
@@ -160,6 +160,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 print("Clicou no Contato");
               },
             ),
+
+
 
            // Text(
            //   '$_counter',
