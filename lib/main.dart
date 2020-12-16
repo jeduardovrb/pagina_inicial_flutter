@@ -116,7 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
 
             
-            Text('Seja-Bem vindos(as) ao produtos Silver.'),
+            Text('Seja-Bem vindos(as) aos produtos Silver.'),
 
             FlatButton(
               child: Text(
