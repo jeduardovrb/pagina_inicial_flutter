@@ -72,11 +72,28 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
+
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
+
+      drawer: Drawer(
+        child: ListView(
+          children: <Widget>[
+            ListTile(
+              title: Text("Home"),
+              trailing: Icon(Icons.arrow_forward),
+            ),
+            ListTile(
+              title: Text("Configuração"),
+              trailing: Icon(Icons.arrow_forward),
+            ),
+          ],
+        ),
+      ),
+
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
@@ -168,7 +185,9 @@ class _MyHomePageState extends State<MyHomePage> {
            //   style: Theme.of(context).textTheme.headline4,
            // ),
           ],
+
         ),
+
       ),
 
       //floatingActionButton: FloatingActionButton(
